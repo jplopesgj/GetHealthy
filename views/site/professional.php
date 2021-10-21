@@ -78,31 +78,7 @@ $this->title = 'Get Healthy';
 
                 </div>
             </div>
-            <div class="ml-3 mb-3 card bg-primary" style="width: 18rem; height:25rem">
-                <div style="background-position-y: center;background-size:cover;height:60%;background-image:url('/images/person3.jpeg')"></div>
-                <div class="card-body">
-                    <p class="card-text">Personal</p>
-                    <p class="card-text">Foca em Esportes</p>
-                </div>
-                <div class="mb-3 row text-center justify-space-between">
-                    <i style="font-size:30px" class="col-4 fab fa-facebook"></i>
-                    <i style="font-size:30px" class="col-4 fab fa-instagram"></i>
-                    <i style="font-size:30px" class="col-4 fab fa-whatsapp"></i>
-
-                </div>
-            </div>
-            <div class="ml-3 mb-3 card bg-info" style="width: 18rem; height:25rem">
-                <div style="background-position-y: center;background-size:cover;height:60%;background-image:url('/images/person4.jpeg')"></div>
-                <div class="card-body">
-                    <p class="card-text">Nutricionista</p>
-                </div>
-                <div class="mb-3 row text-center justify-space-between">
-                    <i style="font-size:30px" class="col-4 fab fa-facebook"></i>
-                    <i style="font-size:30px" class="col-4 fab fa-instagram"></i>
-                    <i style="font-size:30px" class="col-4 fab fa-whatsapp"></i>
-
-                </div>
-            </div>
+          
         </div>
     </div>
 </div>
