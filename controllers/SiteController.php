@@ -136,6 +136,25 @@ class SiteController extends Controller
         return $this->render('souprofissional');
     }
 
+    /**
+     * Displays Login or Register Page.
+     *
+     * @return string
+     */
+    public function actionProfessional()
+    {
+        return $this->render('professional.php');
+    }
+
+     /**
+     * Displays Login or Register Page.
+     *
+     * @return string
+     */
+    public function actionWhouare()
+    {
+        return $this->render('what_are_you.php');
+    }
     
     
 }

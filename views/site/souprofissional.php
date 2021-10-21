@@ -3,6 +3,7 @@
 /* @var $this yii\web\View */
 
 $this->title = 'Sou Profissional';
+
 ?>
 
 <script>
@@ -23,14 +24,12 @@ $this->title = 'Sou Profissional';
         }
 
         if (instagram.checked == true) {
-            console.log('oi')
             instagraminput.classList.remove("d-none");
         } else {
             instagraminput.classList.add("d-none");
         }
 
         if (twitter.checked == true) {
-            console.log('oi')
             twitterinput.classList.remove("d-none");
         } else {
             twitterinput.classList.add("d-none");
@@ -43,14 +42,12 @@ $this->title = 'Sou Profissional';
         }
     }
 </script>
-<div class="h-100 d-flex align-items-center justify-content-center" style="padding-top: 60px;">
-    <div class="col-4 d-none d-sm-block ">
+<div class="h-100 container d-flex align-items-center justify-content-center" style="padding-top: 60px;">
+    <div class="text-center col-4 d-none d-sm-block">
         <div class="col-12">
-            <img style="width:300px; height:300px" src="/web/images/Uso-de-caso.png" alt="perfil">
+            <img style="width:100%;" src="/images/blank-profile-picture-.png" alt="perfil">
         </div>
-        <div class="row">
-
-        </div>
+ 
     </div>
 
 

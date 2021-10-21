@@ -3,58 +3,76 @@
 /* @var $this yii\web\View */
 
 $this->title = 'Get Healthy';
+
 ?>
-<div class="background-home-runnig d-flex flex-column justify-content-center text-center h-100">
+<script>
+    function redirect() {
+        window.location.href = 'http://dev.gethealthy/site/whouare'
+    }
+</script>
+<div style="column-gap:5%;padding-top: 10%;padding-bottom: 10%;" class="bg-light d-flex flex-row align-items-center justify-content-center text-center h-100">
+    <div class="d-flex flex-column">
+        <h1 class="display-2">Get Healthy</h1>
 
-    <h1 class="display-2">Get Healthy</h1>
-
-    <strong>
-    <h5 class="mb-4">O início da sua saúde.</h5>
-    </strong>
-
+        <strong>
+            <h5 class="mb-4">O início da sua saúde.</h5>
+        </strong>
+    </div>
 
     <div class="d-flex justify-content-center text-center">
-        <p><a class="btn btn-lg btn-info mr-3" href="http://dev.gethealthy.com.br/site/souprofissional">Já sou um profissional</a></p>
-        <p><a class="btn btn-lg btn-warning" href="http://dev.gethealthy.com.br/site/cadastrar">Quero me cadastrar</a></p>
-    </div>
-</div>
+        <div class="rounded shadow-sm card" style="width: 30rem;">
+            <div class="pt-0 mb-0 card-body">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1"></label>
+                        <input placeholder="Email ou Usuário" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
 
-<?php /*
-<div class="body-content">
-   
-        <div class="row">
-            <div class="col-lg-4">
-                <h2>Heading</h2>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
+                        <label for="exampleInputPassword1"></label>
+                        <input placeholder="Senha" type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
 
-                <p><a class="btn btn-outline-secondary" href="http://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
+                    <button onclick="redirect()" type="button" class="w-100 mb-3 btn btn-primary">Entrar</button>
+                    <a href="#"> Esqueceu a senha?</a>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
+                    <hr>
+                </form>
 
-                <p><a class="btn btn-outline-secondary" href="http://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-outline-secondary" href="http://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
+                <button type="button" class="text-white btn btn-lg bg-success pb-2" data-toggle="modal" data-target="#RegisterModal">
+                    Registrar
+                </button>
             </div>
         </div>
 
-    </div> 
+
+        <!-- Modal -->
+        <div class="modal fade" id="RegisterModal" tabindex="-1" aria-labelledby="#RegisterModalHome" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="RegisterModalHome">Cadastre-se</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div style="column-gap:3%;" class="d-flex space pl-0 justify-content-between col-12 form-group">
+                            <input placeholder="Nome" type="text" class="col-6 form-control" id="InputNameRegister">
+                            <input placeholder="Sobrenome" type="text" class="col-6 form-control" id="InputLastNameRegister">
+                        </div>
+                        <div class="form-group">
+                            <input placeholder="Email ou Telefone" type="email" class="form-control" id="InputEmailorPhoneRegister" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <input placeholder="Senha" type="password" class="form-control" id="Password">
+                        </div>
+                    </div>
+                    <div class="justify-content-center modal-footer">
+                        <button onclick="redirect()" type="button" class="text-white btn bg-success">Cadastrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-*/ ?>
+
