@@ -144,7 +144,7 @@ $this->title = 'Sou Profissional';
                 <textarea required class="form-control" id="professionamyself" rows="3"></textarea>
             </div>
 
-            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="submit" class="mb-5 btn btn-primary">Enviar</button>
     </div>
 
     </form>

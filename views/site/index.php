@@ -10,7 +10,7 @@ $this->title = 'Get Healthy';
         window.location.href = 'http://dev.gethealthy/site/whouare'
     }
 </script>
-<div style="column-gap:5%;padding-top: 10%;padding-bottom: 10%;" class="bg-light d-flex flex-row align-items-center justify-content-center text-center h-100">
+<div style="column-gap:5%;" class="flex-column flex-sm-column bg-light d-flex flex-md-row align-items-center justify-content-center text-center h-100">
     <div class="d-flex flex-column">
         <h1 class="display-2">Get Healthy</h1>
 
@@ -20,7 +20,7 @@ $this->title = 'Get Healthy';
     </div>
 
     <div class="d-flex justify-content-center text-center">
-        <div class="rounded shadow-sm card" style="width: 30rem;">
+        <div class="rounded shadow-sm card" style="width: auto;">
             <div class="pt-0 mb-0 card-body">
                 <form>
                     <div class="form-group">

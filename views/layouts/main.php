@@ -21,6 +21,7 @@ AppAsset::register($this);
     <?php $this->registerCsrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="d-flex flex-column h-100">
 <?php $this->beginBody() ?>
@@ -49,7 +50,7 @@ AppAsset::register($this);
     ?> 
 </header>
 
-<main role="main" class="flex-shrink-0 ">
+<main role="main" class="flex-shrink-0 mobile-100 h-90 ">
     <div class="h-100">
         <?= Breadcrumbs::widget([
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
@@ -59,7 +60,7 @@ AppAsset::register($this);
     </div>
 </main>
 
-<footer class="footer bg-primary mt-auto py-3 text-white">
+<footer style="height:10%"class="footer bg-primary mt-auto py-3 text-white">
     <div class="container">
         <p class="float-left">&copy; Get Healthy <?= date('Y') ?></p>
         <p class="float-right"></p>

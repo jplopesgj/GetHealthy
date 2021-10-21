@@ -1,5 +1,16 @@
+body {
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
 main>.container {
     padding: 70px 15px 20px;
+}
+
+@media only screen and (max-width: 992px) {
+    .mobile-100 {
+        height: auto !important;
+    }
 }
 
 .footer {
@@ -61,10 +72,6 @@ a.desc:after {
     margin: 0 0 15px 0;
 }
 
-body {
-    margin-top: 50px
-}
-
 
 /* align the logout "link" (button in form) of the navbar */
 
@@ -93,5 +100,5 @@ body {
 }
 
 .h-90 {
-    height: 94%;
+    height: 90%;
 }

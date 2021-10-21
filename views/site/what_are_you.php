@@ -5,7 +5,7 @@
 $this->title = 'Get Healthy';
 
 ?>
-<div style="background:url('/images/running-woman.jpg') no-repeat center;padding-top:10%;padding-bottom: 15.6%;" class="container-fluid h-100 d-flex flex-column justify-content-center text-center ">
+<div style="background:url('/images/running-woman.jpg') no-repeat top center;" class="container-fluid h-100 d-flex flex-column justify-content-center text-center ">
 
     <h1 class="display-2">Get Healthy</h1>
 
